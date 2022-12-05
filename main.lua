@@ -60,6 +60,10 @@ function love.load()
   lExitGameBtn:setOnClick(GameExitClick)
   lDemoSldr:setOnClick(GameSliderClick)
   
+  --At somepoint you may or may not need this:
+  --sX, sY = push:toGame(love.graphics.getWidth(), love.graphics.getHeight())
+  --it gets the push library to return a coordinate based on what push thinks the screen resolution is
+  
 end
 
 function love.draw()
@@ -104,6 +108,3 @@ function love.mousepressed(x, y, button)
     lDemoSldr:mousepressed(love,push,x,y,button)
   end
 end
-
-
-
