@@ -1,0 +1,8 @@
+1. The slider project should not use any other libraries than what is already provided
+2. The slider constructor should acccept an X position, a Y position, Width, Height, Minum value, Maximum value, and any other values you deem necessary
+3. The slider widget should be able to scale with the screen size. The full screen button will allow you to test that. If it looks the same when in full screen as it does in windowed mode... that's all that's needed to fulfill this requirement
+4. The slider widget should have a method to read its value, such as "slider:getValue()"
+5. The slider widget should have a method to read its value, such as "slider:setValue()"
+6. The slider widget should try to conform to Love2D's function calls (see LBtn as an example, but if the slider needs to update then that update is passed in from Main.lua's Love.update(dt) to sldr:update(dt))
+7. The slider widget should allow the user to click and drag a circular icon to set a new value
+8. The slider widget should snap to the user's mouse position if the user clicks on the bar and subsequently update its value
